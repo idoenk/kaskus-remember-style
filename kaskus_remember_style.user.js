@@ -136,7 +136,7 @@ function clog(msg) {
         }
 
         css = ''
-          +'.entry, .post-quote span, :root .kqr-dialog-base #box_wrap .entry-content, :root .kqr-dialog-base #box_wrap .entry-content .post-quote span{font-size: '+fsize+'px!important;}'
+          +'.entry, .post-quote span, :root .kqr-dialog-base #box_wrap #box_preview.entry-content, :root .kqr-dialog-base #box_wrap #box_preview.entry-content .post-quote span{font-size: '+fsize+'px!important;}'
         ;
         if( !$('#krs-dynamic-css').length )
           GM_addGlobalStyle(css, 'krs-dynamic-css');
